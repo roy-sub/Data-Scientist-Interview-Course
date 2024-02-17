@@ -21,13 +21,13 @@ Answer:
 
 Regularization is a technique used to avoid overfitting by trying to make the model more simple.The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=6.%20What%20are%20L1%20and%20L2%20regularizations%3F%20What%20are%20the%20differences%20between%20the%C2%A0two%3F)
 
-### Q6: Mention three ways to handle missing or corrupted data in a dataset. ###
+### Q5: Mention three ways to handle missing or corrupted data in a dataset. ###
 
 Answer:
 
 In general, real-world data often has a lot of missing values. The cause of missing values can be data corruption or failure to record data. The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#9:~:text=10.-,Mention%20three%20ways%20to%20handle%20missing%20or%20corrupted%20data%20in%20a%C2%A0dataset.,-In%20general%2C%20real)
 
-### Q7: Explain briefly the logistic regression model and state an example of when you have used it recently. ###
+### Q6: Explain briefly the logistic regression model and state an example of when you have used it recently. ###
 
 Answer:
 
@@ -39,7 +39,7 @@ There is a lot of classification applications to it:
 
 Classify email as spam or not, To identify whether the patient is healthy or not, and so on.
 
-### Q8: Explain briefly batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. and what are the pros and cons for each of them? ###
+### Q7: Explain briefly batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. and what are the pros and cons for each of them? ###
 
 Gradient descent is a generic optimization algorithm cable for finding optimal solutions to a wide range of problems. The general idea of gradient descent is to tweak parameters iteratively in order to minimize a cost function.
 
@@ -77,7 +77,7 @@ Pros:
 Cons: 
 1. It might be difficult to escape from local minima.
 
-### Q9: Explain what is information gain and entropy in the context of decision trees. ###
+### Q8: Explain what is information gain and entropy in the context of decision trees. ###
 Entropy and Information Gain are two key metrics used in determining the relevance of decision-making when constructing a decision tree model and determining the nodes and the best way to split.
 
 The idea of a decision tree is to divide the data set into smaller data sets based on the descriptive features until we reach a small enough set that contains data points that fall under one label.
@@ -85,14 +85,14 @@ The idea of a decision tree is to divide the data set into smaller data sets bas
 Entropy is the measure of impurity, disorder, or uncertainty in a bunch of examples. Entropy controls how a Decision Tree decides to split the data.
 Information gain calculates the reduction in entropy or surprise from transforming a dataset in some way. It is commonly used in the construction of decision trees from a training dataset, by evaluating the information gain for each variable and selecting the variable that maximizes the information gain, which in turn minimizes the entropy and best splits the dataset into groups for effective classification.
 
-### Q13: What are the differences between a model that minimizes squared error and the one that minimizes the absolute error? and in which cases each error metric would be more appropriate? ###
+### Q19: What are the differences between a model that minimizes squared error and the one that minimizes the absolute error? and in which cases each error metric would be more appropriate? ###
 
 Both mean square error (MSE) and mean absolute error (MAE) measures the distances between vectors and express average model prediction in units of the target variable. Both can range from 0 to infinity, the lower they are the better the model.
 
 The main difference between them is that in MSE the errors are squared before being averaged while in MAE they are not. This means that a large weight will be given to large errors. MSE is useful when large errors in the model are trying to be avoided. This means that outliers affect MSE more than MAE, that is why MAE is more robust to outliers. 
 Computation-wise MSE is easier to use as the gradient calculation will be more straightforward than MAE, which requires linear programming to calculate it.
 
-### Q14: Define and compare parametric and non-parametric models and give two examples for each of them? ###
+### Q10: Define and compare parametric and non-parametric models and give two examples for each of them? ###
 
 Answer:
 
@@ -104,7 +104,7 @@ Ex. Linear Regression, Logistic Regression, LDA
 
 Ex. Decision Tree, Random Forest.
 
-### Q18: You are working on a clustering problem, what are different evaluation metrics that can be used, and how to choose between them? ###
+### Q11: You are working on a clustering problem, what are different evaluation metrics that can be used, and how to choose between them? ###
 
 Answer:
 
@@ -123,7 +123,7 @@ Dunn’s Index
 
 Dunn’s Index (DI) is another metric for evaluating a clustering algorithm. Dunn’s Index is equal to the minimum inter-cluster distance divided by the maximum cluster size. Note that large inter-cluster distances (better separation) and smaller cluster sizes (more compact clusters) lead to a higher DI value. A higher DI implies better clustering. It assumes that better clustering means that clusters are compact and well-separated from other clusters.
 
-### Q19: What is the ROC curve and when should you use it? ### 
+### Q12: What is the ROC curve and when should you use it? ### 
 
 Answer:
 
@@ -141,7 +141,7 @@ Here are some benefits of using the ROC Curve :
 
 * Can be used to compare different ML models by calculating the area under the ROC curve (AUC)
 
-### Q20: What is the difference between hard and soft voting classifiers in the context of ensemble learners? ###
+### Q13: What is the difference between hard and soft voting classifiers in the context of ensemble learners? ###
 
 Answer:
 
@@ -149,7 +149,7 @@ Answer:
 
 * Soft Voting: We take into account the probability predictions for each class by each classifier and then classify an input to the class with maximum probability based on the average probability (averaged over the classifier's probabilities) for that class.
 
-### Q21: What is boosting in the context of ensemble learners discuss two famous boosting methods ###
+### Q14: What is boosting in the context of ensemble learners discuss two famous boosting methods ###
 
 Answer:
 
@@ -160,7 +160,7 @@ There are many boosting methods available, but by far the most popular are:
 * Adaptive Boosting: One way for a new predictor to correct its predecessor is to pay a bit more attention to the training instances that the predecessor under-fitted. This results in new predictors focusing more and more on the hard cases.
 * Gradient Boosting:  Another very popular Boosting algorithm is Gradient Boosting. Just like AdaBoost, Gradient Boosting works by sequentially adding predictors to an ensemble, each one correcting its predecessor. However, instead of tweaking the instance weights at every iteration as AdaBoost does, this method tries to fit the new predictor to the residual errors made by the previous predictor.
 
-### Q22: How can you evaluate the performance of a dimensionality reduction algorithm on your dataset? ###
+### Q15: How can you evaluate the performance of a dimensionality reduction algorithm on your dataset? ###
 
 Answer:
 
@@ -168,7 +168,7 @@ Intuitively, a dimensionality reduction algorithm performs well if it eliminates
 
 Alternatively, if you are using dimensionality reduction as a preprocessing step before another Machine Learning algorithm (e.g., a Random Forest classifier), then you can simply measure the performance of that second algorithm; if dimensionality reduction did not lose too much information, then the algorithm should perform just as well as when using the original dataset.
 
-### Q23: Define the curse of dimensionality and how to solve it. ###
+### Q16: Define the curse of dimensionality and how to solve it. ###
 
 Answer:
 Curse of dimensionality represents the situation when the amount of data is too few to be represented in a high-dimensional space, as it will be highly scattered in that high-dimensional space and it becomes more probable that we overfit this data. If we increase the number of features, we are implicitly increasing model complexity and if we increase model complexity we need more data. 
@@ -179,15 +179,13 @@ Remove irrelevant features not discriminating classes correlated or features not
 * Feature selection(select the most important ones).
 * Feature extraction(transform current feature dimensionality into a lower dimension preserving the most possible amount of information like PCA ).
 
-### Q24: In what cases would you use vanilla PCA, Incremental PCA, Randomized PCA, or Kernel PCA? ### 
-
+### Q17: In what cases would you use vanilla PCA, Incremental PCA, Randomized PCA, or Kernel PCA? ### 
 
 Answer:
 
 Regular PCA is the default, but it works only if the dataset fits in memory. Incremental PCA is useful for large datasets that don't fit in memory, but it is slower than regular PCA, so if the dataset fits in memory you should prefer regular PCA. Incremental PCA is also useful for online tasks when you need to apply PCA on the fly, every time a new instance arrives. Randomized PCA is useful when you want to considerably reduce dimensionality and the dataset fits in memory; in this case, it is much faster than regular PCA. Finally, Kernel PCA is useful for nonlinear datasets.
 
-
-### Q25: Discuss two clustering algorithms that can scale to large datasets ###
+### Q18: Discuss two clustering algorithms that can scale to large datasets ###
 
 Answer:
 
@@ -200,7 +198,7 @@ this algorithm in the MiniBatchKMeans class.
 **Balanced Iterative Reducing and Clustering using Hierarchies (BIRCH)** 
 is a clustering algorithm that can cluster large datasets by first generating a small and compact summary of the large dataset that retains as much information as possible. This smaller summary is then clustered instead of clustering the larger dataset.
 
-### Q27: What are Loss Functions and Cost Functions? Explain the key Difference Between them. ###
+### Q19: What are Loss Functions and Cost Functions? Explain the key Difference Between them. ###
 
 Answer:
 The loss function is the measure of the performance of the model on a single training example, whereas the cost function is the average loss function over all training examples or across the batch in the case of mini-batch gradient descent.
@@ -209,7 +207,7 @@ Some examples of loss functions are Mean Squared Error, Binary Cross Entropy, et
 
 Whereas, the cost function is the average of the above loss functions over training examples.
 
-### Q28: What is the importance of batch in machine learning and explain some batch-dependent gradient descent algorithms? ###
+### Q20: What is the importance of batch in machine learning and explain some batch-dependent gradient descent algorithms? ###
 
 Answer:
 In the memory, the dataset can load either completely at once or in the form of a set. If we have a huge size of the dataset, then loading the whole data into memory will reduce the training speed, hence batch term is introduced.
@@ -222,13 +220,13 @@ There are 3 types of gradient descent algorithms based on batch size: (1) Stocha
 
 If the whole data is in a single batch, it is called batch gradient descent. If the single data points are equal to one batch i.e. number of batches = number of data instances, it is called stochastic gradient descent. If the number of batches is less than the number of data points or greater than 1, it is known as mini-batch gradient descent.
 
-### Q30: Why boosting is a more stable algorithm as compared to other ensemble algorithms? ###
+### Q21: Why boosting is a more stable algorithm as compared to other ensemble algorithms? ###
 
 Answer:
 
 Boosting algorithms focus on errors found in previous iterations until they become obsolete. Whereas in bagging there is no corrective loop. That’s why boosting is a more stable algorithm compared to other ensemble algorithms.
 
-### Q31: What is active learning and discuss one strategy of it? ###
+### Q22: What is active learning and discuss one strategy of it? ###
 
 Answer:
 Active learning is a special case of machine learning in which a learning algorithm can interactively query a user (or some other information source) to label new data points with the desired outputs. In statistics literature, it is sometimes referred to as optimal experimental design.
@@ -239,7 +237,7 @@ In stream-based selective sampling, unlabelled data is continuously fed to an ac
 2. Pool-based sampling
 In this case, the data samples are chosen from a pool of unlabelled data based on the informative value scores and sent for manual labeling. Unlike stream-based sampling, oftentimes, the entire unlabelled dataset is scrutinized for the selection of the best instances.
 
-### Q1: What are autoencoders? Explain the different layers of autoencoders and mention three practical usages of them? ###
+### Q23: What are autoencoders? Explain the different layers of autoencoders and mention three practical usages of them? ###
 
 Answer:
 
@@ -258,8 +256,7 @@ Autoencoders have a wide variety of usage in the real world. The following are s
 2. Image compression
 3. Nonlinear version of PCA
 
-
-### Q2: What is an activation function and discuss the use of an activation function? Explain three different types of activation functions? ###
+### Q24: What is an activation function and discuss the use of an activation function? Explain three different types of activation functions? ###
 
 Answer:
 
@@ -287,8 +284,7 @@ It solves the problem of vanishing gradient on both sides by returning a value �
 
 * Softmax: it is usually used at the last layer for a classification problem because it returns a set of probabilities, where the sum of them is 1. Moreover, it is compatible with cross-entropy loss, which is usually the loss function for classification problems.
 
-
-### Q3: You are using a deep neural network for a prediction task. After training your model, you notice that it is strongly overfitting the training set and that the performance on the test isn’t good. What can you do to reduce overfitting? ###
+### Q25: You are using a deep neural network for a prediction task. After training your model, you notice that it is strongly overfitting the training set and that the performance on the test isn’t good. What can you do to reduce overfitting? ###
 
 To reduce overfitting in a deep neural network changes can be made in three places/stages: The input data to the network, the network architecture, and the training process:
 
@@ -311,12 +307,11 @@ To reduce overfitting in a deep neural network changes can be made in three plac
 3. The training process:
 * Improvements in validation losses should decide when to stop training. Use callbacks for early stopping when there are no significant changes in the validation loss and restore_best_weights.
 
-### Q4: Why should we use Batch Normalization? ###
+### Q26: Why should we use Batch Normalization? ###
 
 Batch normalization is a technique for training very deep neural networks that standardizes the inputs to a layer for each mini-batch.
 
 Usually, a dataset is fed into the network in the form of batches where the distribution of the data differs for every batch size. By doing this, there might be chances of vanishing gradient or exploding gradient when it tries to backpropagate. In order to combat these issues, we can use BN (with irreducible error) layer mostly on the inputs to the layer before the activation function in the previous layer and after fully connected layers.
-
 
 Batch Normalisation has the following effects on the Neural Network:
 
@@ -327,7 +322,7 @@ Batch Normalisation has the following effects on the Neural Network:
 5. Tries to Prevent exploding/vanishing gradient.
 6. Faster Training/Convergence to the minimum loss function
 
-### Q5: How to know whether your model is suffering from the problem of Exploding Gradients? ###
+### Q27: How to know whether your model is suffering from the problem of Exploding Gradients? ###
 
 By taking incremental steps towards the minimal value, the gradient descent algorithm aims to minimize the error. The weights and biases in a neural network are updated using these processes. However, at times, the steps grow excessively large, resulting in increased updates to weights and bias terms to the point where the weights overflow (or become NaN, that is, Not a Number). An exploding gradient is the result of this, and it is an unstable method.
 
@@ -343,12 +338,11 @@ If you have these types of problems, you can dig deeper to see if you have a pro
 2. The model weights go to NaN values during training.
 3. The error gradient values are consistently above 1.0 for each node and layer during training.
 
-### Q6: Can you name and explain a few hyperparameters used for training a neural network? ###
+### Q28: Can you name and explain a few hyperparameters used for training a neural network? ###
 
 Answer:
 
 Hyperparameters are any parameter in the model that affects the performance but is not learned from the data unlike parameters ( weights and biases), the only way to change it is manually by the user.
-
 
 1. Number of nodes: number of inputs in each layer.
 
@@ -376,7 +370,7 @@ Hyperparameters are any parameter in the model that affects the performance but 
 
 11. Learning Rate: Controls how much to update weights & bias (w+b) terms after training on each batch. Several helpers are used to getting the learning rate right.
 
-### Q8: Describe the architecture of a typical Convolutional Neural Network (CNN)? ###
+### Q29: Describe the architecture of a typical Convolutional Neural Network (CNN)? ###
 
 Answer:
 
@@ -393,7 +387,7 @@ The number of these layers can increase depending on the complexity of the data 
 * Max pooling: it takes the max number of window 2×2 as an example and represents this window by using the max number in it then slides on the image to make the same operation.
 * Average pooling: it is the same as max-pooling but takes the average of the window.
 
-### Q9: What is the Vanishing Gradient Problem in Artificial Neural Networks and How to fix it? ###
+### Q30: What is the Vanishing Gradient Problem in Artificial Neural Networks and How to fix it? ###
 
 Answer:
 
@@ -406,7 +400,7 @@ Some ways to fix it are:
 2. Using ReLU or Leaky ReLU over sigmoid and tanh activation functions.
 3. Use models that help propagate gradients to earlier time steps like in GRUs and LSTMs.
 
-### Q10:  When it comes to training an artificial neural network, what could be the reason why the loss doesn't decrease in a few epochs? ###
+### Q31:  When it comes to training an artificial neural network, what could be the reason why the loss doesn't decrease in a few epochs? ###
 
 Answer:
 
@@ -422,14 +416,14 @@ d) The Regularisation hyper-parameter is quite large.
 
 e).  The classic case of vanishing gradients
 
-### Q11: Why Sigmoid or Tanh is not preferred to be used as the activation function in the hidden layer of the neural network? ###
+### Q31: Why Sigmoid or Tanh is not preferred to be used as the activation function in the hidden layer of the neural network? ###
 
 Answer:
 
 A common problem with Tanh or Sigmoid functions is that they saturate. Once saturated, the learning algorithms cannot adapt to the weights and enhance the performance of the model.
 Thus, Sigmoid or Tanh activation functions prevent the neural network from learning effectively leading to a vanishing gradient problem. The vanishing gradient problem can be addressed with the use of Rectified Linear Activation Function (ReLu) instead of sigmoid and Tanh.
 
-### Q12: Discuss in what context it is recommended to use transfer learning and when it is not. ###
+### Q33: Discuss in what context it is recommended to use transfer learning and when it is not. ###
 
 Answer:
 
@@ -442,7 +436,6 @@ Transfer learning is used for tasks where the data is too little to train a full
 
 2. In some cases, like in vision-related tasks, the initial layers have a common behavior of detecting edges, then a little more complex but still abstract features and so on which is common in all vision tasks, and hence a pre-trained model's initial layers can be used directly. The same thing holds for Language Models too, for example, a model trained in a large Hindi corpus can be transferred and used for other Indo-Aryan Languages with low resources available.
 
-
 𝐂𝐚𝐬𝐞𝐬 𝐰𝐡𝐞𝐧 𝐭𝐫𝐚𝐧𝐬𝐟𝐞𝐫 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐬𝐡𝐨𝐮𝐥𝐝 𝐧𝐨𝐭 𝐛𝐞 𝐮𝐬𝐞𝐝:
 
 1. The first and most important is the "COST". So is it cost-effective or we can have a similar performance without using it.
@@ -451,7 +444,7 @@ Transfer learning is used for tasks where the data is too little to train a full
 
 3. If the latency is a big constraint (Mostly in NLP ) then transfer learning is not the best option. However Now with the TensorFlow lite kind of platform and Model Distillation, Latency is not a problem anymore.
 
-### Q13: Discuss the vanishing gradient in RNN and How they can be solved. ###
+### Q34: Discuss the vanishing gradient in RNN and How they can be solved. ###
 
 Answer:
 
@@ -459,7 +452,7 @@ In Sequence to Sequence models such as RNNs, the input sentences might have long
 
 Models like the Gated Recurrent Units (GRUs) and the Long short-term memory (LSTMs) were proposed, the main idea of these models is to use gates to help the network determine which information to keep and which information to discard during learning. Then Transformers were proposed depending on the self-attention mechanism to catch the dependencies between words in the sequence.
 
-### Q14: What are the main gates in LSTM and what are their tasks? ###
+### Q35: What are the main gates in LSTM and what are their tasks? ###
 
 Answer:
 There are 3 main types of gates in a LSTM Model, as follows:
@@ -472,7 +465,7 @@ There are 3 main types of gates in a LSTM Model, as follows:
 
 Common things for all these gates are they all take take inputs as the current temporal state/input/word/observation and the previous hidden state output and sigmoid activation is mostly used in all of these.
 
-### Q15: Is it a good idea to use CNN to classify 1D signal? ###
+### Q36: Is it a good idea to use CNN to classify 1D signal? ###
 
 Answer:
 For time-series data, where we assume temporal dependence between the values, then convolutional neural networks (CNN) are one of the possible approaches. However the most popular approach to such data is to use recurrent neural networks (RNN), but you can alternatively use CNNs, or a hybrid approach (quasi-recurrent neural networks, QRNN).
@@ -483,7 +476,7 @@ With **RNN**, you would use a cell that takes as input the previous hidden state
 
 **QRNN** layers mix both approaches.
 
-### Q16: How does L1/L2 regularization affect a neural network? ###
+### Q37: How does L1/L2 regularization affect a neural network? ###
 
 Answer:
 
@@ -497,26 +490,25 @@ Regularisation has the following benefits:
 - Makes it feasible to fit much more complicated models without overfitting.
 - Reduces the magnitude of weights and biases.
 - L1 learns sparse models that is many weights turn out to be 0.
-- https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/tree/main 
 
-### Q17: 𝐇𝐨𝐰 𝐰𝐨𝐮𝐥𝐝 𝐲𝐨𝐮 𝐜𝐡𝐚𝐧𝐠𝐞 𝐚 𝐩𝐫𝐞-𝐭𝐫𝐚𝐢𝐧𝐞𝐝 𝐧𝐞𝐮𝐫𝐚𝐥 𝐧𝐞𝐭𝐰𝐨𝐫𝐤 𝐟𝐫𝐨𝐦 𝐜𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐭𝐨 𝐫𝐞𝐠𝐫𝐞𝐬𝐬𝐢𝐨𝐧? ###
+### Q38: 𝐇𝐨𝐰 𝐰𝐨𝐮𝐥𝐝 𝐲𝐨𝐮 𝐜𝐡𝐚𝐧𝐠𝐞 𝐚 𝐩𝐫𝐞-𝐭𝐫𝐚𝐢𝐧𝐞𝐝 𝐧𝐞𝐮𝐫𝐚𝐥 𝐧𝐞𝐭𝐰𝐨𝐫𝐤 𝐟𝐫𝐨𝐦 𝐜𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐭𝐨 𝐫𝐞𝐠𝐫𝐞𝐬𝐬𝐢𝐨𝐧? ###
 
 Answer:
 Using transfer learning where we can use our knowledge about one task to do another. First set of layers of a neural network are usually feature extraction layers and will be useful for all tasks with the same input distribution. So, we should replace the last fully connected layer and Softmax responsible for classification with one neuron for regression-or fully connected-layer for correction then one neuron for regression.
 
 We can optionally freeze the first set of layers if we have few data or to converge fast. Then we can train the network with the data we have and using the suitable loss for the regression problem, making use of the robust feature extraction -first set of layers- of a pre-trained model on huge data.
 
-### Q19: What are the hyperparameters that can be optimized for the batch normalization layer? ###
+### Q39: What are the hyperparameters that can be optimized for the batch normalization layer? ###
 
 Answer: The $\gamma$ and $\beta$ hyperparameters for the batch normalization layer are learned end to end by the network. 
 In batch-normalization, the outputs of the intermediate layers are normalized to have a mean of 0 and standard deviation of 1. Rescaling by $\gamma$ and shifting by $\beta$ helps us change the mean and standard deviation to other values.
 
-### Q20: What is the effect of dropout on the training and prediction speed of your deep learning model? ###
+### Q40: What is the effect of dropout on the training and prediction speed of your deep learning model? ###
 
 Answer: Dropout is a regularization technique, which zeroes down some weights and scales up the rest of the weights by a factor of 1/(1-p). Let's say if Dropout layer is initialized with p=0.5, that means half of the weights will zeroed down, and rest will be scaled by a factor of 2. This layer is only enabled during training and is disabled during validation and testing. Hence validation and testing is faster. The reason why it works only during training is, we want to reduce the complexity of the model so that model doesn't overfit. Once the model is trained, it doesn't make sense to keep that layer enabled.
 
 
-### Q21: What is the advantage of deep learning over traditional machine learning? ###
+### Q41: What is the advantage of deep learning over traditional machine learning? ###
 
 Answer: 
 
