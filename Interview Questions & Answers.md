@@ -1,10 +1,10 @@
-### Q1: Mention three ways to make your model robust to outliers. ###
+### Q1: Mention three ways to make your model robust to outliers or How to deal with outliers. ###
 
-Investigating the outliers is always the first step in understanding how to treat them. After you understand the nature of why the outliers occurred you can apply one of the several methods mentioned [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#11:~:text=for%20large%20datasets.-,Bonus%20Question%3A%20Discuss%20how%20to%20make%20your%20model%20robust%20to%20outliers.,-There%20are%20several).
+Investigating the outliers is always the first step in understanding how to treat them. After we have understand the nature of why the outliers occurred we can apply one of the several methods mentioned [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#11:~:text=for%20large%20datasets.-,Bonus%20Question%3A%20Discuss%20how%20to%20make%20your%20model%20robust%20to%20outliers.,-There%20are%20several).
 
 ### Q2: Describe the motivation behind random forests and mention two reasons why they are better than individual decision trees. ###
 
-The motivation behind random forest or ensemble models in general in layman's terms, Let's say we have a question/problem to solve we bring 100 people and ask each of them the question/problem and record their solution. The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=2.%20Describe%20the%20motivation%20behind%20random%20forests%20and%20mention%20two%20reasons%20why%20they%20are%20better%20than%20individual%20decision%C2%A0trees.)
+The motivation behind random forest or ensemble models in layman's term is let's say we have a question/problem to solve and we bring 100 people and ask each of them the same question/problem and record their solutions. The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=2.%20Describe%20the%20motivation%20behind%20random%20forests%20and%20mention%20two%20reasons%20why%20they%20are%20better%20than%20individual%20decision%C2%A0trees.)
 
 ### Q3: What are the differences and similarities between gradient boosting and random forest? and what are the advantages and disadvantages of each when compared to each other? ###
 
@@ -31,20 +31,18 @@ In general, real-world data often has a lot of missing values. The cause of miss
 
 Answer:
 
-Logistic regression is used to calculate the probability of occurrence of an event in the form of a dependent output variable based on independent input variables. Logistic regression is commonly used to estimate the probability that an instance belongs to a particular class. If the probability is bigger than 0.5 then it will belong to that class (positive) and if it is below 0.5 it will belong to the other class. This will make it a binary classifier.
+Logistic regression is used to calculate the probability of occurrence of an event in the form of a dependent output variable based on independent input variables. Logistic regression is commonly used to estimate the probability that an instance on whether it belongs to a particular class or not. If the probability is bigger than 0.5 then it will belong to that class (positive) and if it is below 0.5 it will belong to the other class.
 
-It is important to remember that the Logistic regression isn't a classification model, it's an ordinary type of regression algorithm, and it was developed and used before machine learning, but it can be used in classification when we put a threshold to determine specific categories"
+It is important to remember that the Logistic regression isn't a classification model, it's an ordinary type of regression algorithm but it can be used in classification when we put a threshold to determine specific categories"
 
-There is a lot of classification applications to it:
-
-Classify email as spam or not, To identify whether the patient is healthy or not, and so on.
+There is a lot of classification applications to it such as : Classify email as spam or not, To identify whether the patient is healthy or not, and so on.
 
 ### Q7: Explain briefly batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. and what are the pros and cons for each of them? ###
 
-Gradient descent is a generic optimization algorithm cable for finding optimal solutions to a wide range of problems. The general idea of gradient descent is to tweak parameters iteratively in order to minimize a cost function.
+Gradient descent is a generic optimization algorithm cable for finding optimal solutions to a wide range of problems. The general idea of gradient descent is to tweak parameters iteratively in order to minimize the cost function.
 
 Batch Gradient Descent:
-In Batch Gradient descent the whole training data is used to minimize the loss function by taking a step toward the nearest minimum by calculating the gradient (the direction of descent)
+In Batch Gradient descent the whole training data is used to minimize the cost function by taking a step toward the nearest minimum via calculating the gradient i.e. the direction of descent.
 
 Pros:
 Since the whole data set is used to calculate the gradient it will be stable and reach the minimum of the cost function without bouncing (if the learning rate is chosen cooreclty)
@@ -52,7 +50,6 @@ Since the whole data set is used to calculate the gradient it will be stable and
 Cons:
 
 Since batch gradient descent uses all the training set to compute the gradient at every step, it will be very slow especially if the size of the training data is large.
-
 
 Stochastic Gradient Descent:
 
@@ -78,14 +75,13 @@ Cons:
 1. It might be difficult to escape from local minima.
 
 ### Q8: Explain what is information gain and entropy in the context of decision trees. ###
-Entropy and Information Gain are two key metrics used in determining the relevance of decision-making when constructing a decision tree model and determining the nodes and the best way to split.
+Entropy and Information Gain are two key metrics used in determining the relevance of decision-making when constructing a decision tree and thereby determining the nodes and the best way to split.
 
-The idea of a decision tree is to divide the data set into smaller data sets based on the descriptive features until we reach a small enough set that contains data points that fall under one label.
+The idea of a decision tree is to divide the data set into smaller and smaller data sets based on the descriptive features until we reach a small enough set that contains data points that fall under one label.
 
-Entropy is the measure of impurity, disorder, or uncertainty in a bunch of examples. Entropy controls how a Decision Tree decides to split the data.
-Information gain calculates the reduction in entropy or surprise from transforming a dataset in some way. It is commonly used in the construction of decision trees from a training dataset, by evaluating the information gain for each variable and selecting the variable that maximizes the information gain, which in turn minimizes the entropy and best splits the dataset into groups for effective classification.
+Entropy is the measure of impurity or disorder or uncertainty in a bunch of examples. Entropy controls how a Decision Tree decides to split the data. Information gain on the other hand calculates the reduction in entropy. It is commonly used in the construction of decision trees from a training dataset, by evaluating the information gain for each variable and selecting the variable that maximizes the information gain which in turn minimizes the entropy and best splits the dataset into groups for effective classification.
 
-### Q19: What are the differences between a model that minimizes squared error and the one that minimizes the absolute error? and in which cases each error metric would be more appropriate? ###
+### Q9: What are the differences between a model that minimizes squared error and the one that minimizes the absolute error? and in which cases each error metric would be more appropriate? ###
 
 Both mean square error (MSE) and mean absolute error (MAE) measures the distances between vectors and express average model prediction in units of the target variable. Both can range from 0 to infinity, the lower they are the better the model.
 
@@ -96,11 +92,11 @@ Computation-wise MSE is easier to use as the gradient calculation will be more s
 
 Answer:
 
-**Parametric models** assume that the dataset comes from a certain function with some set of parameters that should be tuned to reach the optimal performance. For such models, the number of parameters is determined prior to training, thus the degree of freedom is limited and reduces the chances of overfitting.
+**Parametric models** assume that the dataset comes from a certain function with some set of parameters that should be tuned to reach the optimal performance. For such models, the number of parameters is determined prior to training thus the degree of freedom is limited and reduces the chances of overfitting.
 
 Ex. Linear Regression, Logistic Regression, LDA
 
-**Nonparametric models** don't assume anything about the function from which the dataset was sampled. For these models, the number of parameters is not determined prior to training, thus they are free to generalize the model based on the data. Sometimes these models overfit themselves while generalizing. To generalize they need more data in comparison with Parametric Models. They are relatively more difficult to interpret compared to Parametric Models.
+**Nonparametric models** don't assume anything about the function from which the dataset was sampled. For these models, the number of parameters is not determined prior to training, thus they are free to generalize the model based on the data. Sometimes these models overfit themselves while generalizing. To generalize they need more data in comparison with Parametric Models. In addition to that they are relatively more difficult to interpret compared to Parametric Models.
 
 Ex. Decision Tree, Random Forest.
 
@@ -108,7 +104,7 @@ Ex. Decision Tree, Random Forest.
 
 Answer:
 
-Clusters are evaluated based on some similarity or dissimilarity measure such as the distance between cluster points. If the clustering algorithm separates dissimilar observations and similar observations together, then it has performed well. The two most popular metrics evaluation metrics for clustering algorithms are the 𝐒𝐢𝐥𝐡𝐨𝐮𝐞𝐭𝐭𝐞 𝐜𝐨𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 and 𝐃𝐮𝐧𝐧’𝐬 𝐈𝐧𝐝𝐞𝐱.
+Clusters are evaluated based on some similarity or dissimilarity measure such as the distance between cluster points. If the clustering algorithm separates dissimilar observations and clutters similar observations together, then it has performed well. The two most popular metrics evaluation metrics for clustering algorithms are the 𝐒𝐢𝐥𝐡𝐨𝐮𝐞𝐭𝐭𝐞 𝐜𝐨𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 and 𝐃𝐮𝐧𝐧’𝐬 𝐈𝐧𝐝𝐞𝐱.
 
 𝐒𝐢𝐥𝐡𝐨𝐮𝐞𝐭𝐭𝐞 𝐜𝐨𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭
 The Silhouette Coefficient is defined for each sample and is composed of two scores:
@@ -117,15 +113,17 @@ b: The mean distance between a sample and all other points in the next nearest c
 
 S = (b-a) / max(a,b)
 
-The 𝐒𝐢𝐥𝐡𝐨𝐮𝐞𝐭𝐭𝐞 𝐜𝐨𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 for a set of samples is given as the mean of the Silhouette Coefficient for each sample. The score is bounded between -1 for incorrect clustering and +1 for highly dense clustering. Scores around zero indicate overlapping clusters. The score is higher when clusters are dense and well separated, which relates to a standard concept of a cluster.
+The 𝐒𝐢𝐥𝐡𝐨𝐮𝐞𝐭𝐭𝐞 𝐜𝐨𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 for a set of samples is given as the mean of the Silhouette Coefficient for each sample. The score is bounded between -1 for incorrect clustering and +1 for highly dense clustering. Scores around zero indicate overlapping clusters. The score is higher when clusters are dense and well separated which relates to a standard concept of a cluster.
 
 Dunn’s Index
 
-Dunn’s Index (DI) is another metric for evaluating a clustering algorithm. Dunn’s Index is equal to the minimum inter-cluster distance divided by the maximum cluster size. Note that large inter-cluster distances (better separation) and smaller cluster sizes (more compact clusters) lead to a higher DI value. A higher DI implies better clustering. It assumes that better clustering means that clusters are compact and well-separated from other clusters.
+Dunn’s Index (DI) is another metric for evaluating a clustering algorithm. Dunn’s Index is equal to the minimum inter-cluster distance divided by the maximum cluster size. Note that large inter-cluster distances ( better separation ) and smaller cluster sizes ( more compact clusters ) lead to a higher DI value. A higher DI implies better clustering. It assumes that better clustering means that clusters are compact and well-separated from other clusters.
 
 ### Q12: What is the ROC curve and when should you use it? ### 
 
 Answer:
+
+![ROC Curve](https://github.com/roy-sub/Data-Scientist-Interview-Course/blob/main/Figures/ROC.png)
 
 ROC curve, Receiver Operating Characteristic curve, is a graphical representation of the model's performance where we plot the True Positive Rate (TPR) against the False Positive Rate (FPR) for different threshold values, for hard classification, between 0 to 1 based on model output.
 
